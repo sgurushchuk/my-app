@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 
 export function App() {
+	// Declarative style below
+	const currentDate = new Date();
+	const currentYear = currentDate.getFullYear();
 	return (
 		<div className="App">
 			<header className="App-header">
@@ -17,6 +20,7 @@ export function App() {
 				>
 					Learn React
 				</a>
+				<p>{currentYear}</p>
 			</header>
 		</div>
 	);
