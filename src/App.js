@@ -1,5 +1,6 @@
 import styles from './App.module.css';
 import { useState } from 'react';
+import { v4 as uuid } from 'uuid';
 
 export function App() {
 	const buttons = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, '+', '-', '=', 'C'];
@@ -29,13 +30,15 @@ export function App() {
 		<div className={styles.app}>
 			<header className={styles.header}>
 				<input
+					readOnly
 					className={isResultColor ? styles.displayResult : styles.display}
 					value={displayValue}
 				></input>
 				<div className={styles.keypad}>
-					{buttons.map((button) => (
+					{buttons.map((button, index) => (
 						<button
 							className={styles.calcButton}
+							key={uuid()}
 							onClick={(event) => makeCalcAction(event.target.dataset.type)}
 							data-type={button}
 						>
