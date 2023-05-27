@@ -35,7 +35,7 @@ export function App() {
 					value={displayValue}
 				></input>
 				<div className={styles.keypad}>
-					{buttons.map((button, index) => (
+					{buttons.map((button) => (
 						<button
 							className={styles.calcButton}
 							key={uuid()}
