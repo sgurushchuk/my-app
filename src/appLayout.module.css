@@ -1,0 +1,13 @@
+body {
+  background-color: #282c34;
+}
+
+.app {
+  text-align: center;
+}
+
+ .field {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 30px);
+ }

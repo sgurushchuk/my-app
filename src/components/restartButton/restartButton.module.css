@@ -1,0 +1,9 @@
+.restartButton {
+  background-color: #282c34;
+  border: solid 1px #61dafb;
+  color: #fbf861;
+}
+
+.restartButton:hover {
+  background-color: #465065;
+ }
