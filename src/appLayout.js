@@ -1,7 +1,5 @@
 import styles from './appLayout.module.css';
-import { CellButton } from './components/cellButton/cellButton';
-import { RestartButton } from './components/restartButton/restartButton';
-import { HeaderText } from './components/headerText/headerText';
+import { CellButton, RestartButton, HeaderText } from './components';
 import { v4 as uuid } from 'uuid';
 import PropTypes from 'prop-types';
 
